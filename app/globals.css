@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root{
   --primary-color:#007dc3;
   --secondary-color:#0169a4;
@@ -18,7 +19,13 @@ body,
   height:100%;
 }
 .store-title{
-  color:var(--primary-color);
+  color:#facc15; 
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+button{
+  background-color:var(--button);
+}
+button:hover{
+  background-color:var(--button-hover);
 }
