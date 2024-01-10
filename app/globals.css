@@ -22,6 +22,7 @@ body,
   color:#facc15; 
   text-transform: uppercase;
   letter-spacing: 1px;
+  text-shadow: 2px 2px black;
 }
 button{
   background-color:var(--button);
@@ -32,4 +33,7 @@ button:hover{
 
 .text-billboard{
   color:white;
+}
+.product-title{
+  color: var(--primary-color);
 }
