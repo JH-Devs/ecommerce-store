@@ -9,8 +9,8 @@
   --hover-text-color:#feba02;
   --text-color:#8996a0;
   --background-color:#f4f7f9;
-  --button:#5ecc62;
-  --button-hover:#00ad45;
+  --button:#84cc16;
+  --button-hover:#65a30d;
 }
 
 html,
@@ -28,4 +28,8 @@ button{
 }
 button:hover{
   background-color:var(--button-hover);
+}
+
+.text-billboard{
+  color:white;
 }
