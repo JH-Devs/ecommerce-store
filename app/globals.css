@@ -32,8 +32,18 @@ button:hover{
 }
 
 .text-billboard{
-  color:white;
+  color:#22d3ee;
+  letter-spacing: 15px;
+  text-shadow: 2px 2px black;
+  text-transform: uppercase;
 }
 .product-title{
   color: var(--primary-color);
+}
+.section-title{
+  color:#22d3ee;
+  text-shadow: 2px 2px black;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align:center;
 }

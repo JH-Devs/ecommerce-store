@@ -8,11 +8,11 @@ export const revalide= 0;
 
 const HomePage = async () => {
     const products = await getProducts({ isFeatured: true });
-    const billboard = await getBillboard("b7710671-0882-4309-a5a2-d5edd419dd4c");
+    const billboard = await getBillboard("98d79d8b-c5b2-44e7-b7e4-e67388ed4403");
     return(
        <Container>
             <div className="space-y-10 pb-10">
-                <Billboard data={billboard} />           
+                <Billboard data={billboard}/>           
                 <div className="flex flex-col gap-y-8 px-4 sm:px-6 lg:px-8">
                     <ProductList title="Novinky" items={products} />
                 </div>
