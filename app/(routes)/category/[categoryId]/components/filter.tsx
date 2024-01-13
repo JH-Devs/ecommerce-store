@@ -1,8 +1,10 @@
 "use client";
 
+import Button from "@/components/ui/button";
 import { Color, Size } from "@/types";
 import { useSearchParams, useRouter } from "next/navigation";
 import qs from "query-string";
+import { cn } from "@/lib/utils";
 
 interface FilterProps {
     data: (Size | Color )[];
@@ -35,10 +37,29 @@ const Filter: React.FC<FilterProps> = ({
             url:window.location.href,
             query
         }, { skipNull: true });
+
+        router.push(url);
     }
     return (
-        <div>
-            Filtr
+        <div className="mb-8">
+            <h3 className="text-lg font-semibold">
+                {name}
+            </h3>
+            <hr className="my-4" />
+            <div className="flex flex-wrap gap-2">
+                {data.map((filter) => (
+                    <div key={filter.id} className="flex items-center">
+                        <Button
+                        className={cn("rounded-md text-sm text-gray-800 p-1 bg-white border border-gray-300 hover:bg-transparent",
+                        selectedValue === filter.id && "bg-lime-400 text-white border-lime-400"
+                        )}
+                        onClick={() => onClick(filter.id)}
+                        >
+                            {filter.name}
+                        </Button>
+                    </div>
+                ))}
+            </div>
         </div>
     )
 }
