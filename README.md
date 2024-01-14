@@ -1,5 +1,4 @@
-Projekt FE https://ecommerce-store-gules-three.vercel.app/
-BE běží https://ecommerce-admin-rho-wheat.vercel.app/
+Běží na https://ecommerce-store-k1s4n7cro-jhdevs-projects.vercel.app/
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
